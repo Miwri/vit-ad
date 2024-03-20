@@ -131,8 +131,8 @@ def main(argv):
         "centering": centering,
         "dataset": dataset,
         "dataclass": dataclass,
-        "hidden_ratio": hidden_ratio,  # fix for training with transformers as done in gathierry fastflow and described in fast flow paper
-        "flow_steps": flow_steps,  # fix for training with transformers as done in gathierry fastflow
+        "hidden_ratio": hidden_ratio,  # fix for training with transformers as done here https://github.com/gathierry/FastFlow/ and described in fast flow paper
+        "flow_steps": flow_steps,  # fix for training with transformers as done here https://github.com/gathierry/FastFlow/
         "decoder": "NormalizingFlow",
     }
 

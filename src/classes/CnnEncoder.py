@@ -15,6 +15,7 @@ padding = 1
 
 class EncoderVanillaCNN(nn.Module):
     """Shallow Encoder which mirrors the structure from the shallow decoder. Not used since pre-trained ResNet is used as CNN Encoder."""
+
     def __init__(self, img_size: int) -> None:
         super().__init__()
 
@@ -146,7 +147,7 @@ class ResNetEncoder(nn.Module):
         for param in self.res_net.parameters():
             param.requires_grad = False
 
-        # add trainable layer norm as proposed in gathierry fastflow
+        # add trainable layer norm as proposed here https://github.com/gathierry/FastFlow/
         self.norms = nn.ModuleList()
         for in_channels, scale in zip(self.res_net.in_channels, self.res_net.scales):
             self.norms.append(

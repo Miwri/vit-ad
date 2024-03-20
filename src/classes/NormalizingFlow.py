@@ -1,4 +1,4 @@
-"""Module which provides the implementation of a 2D normalizing flow model"""
+"""Module which provides the implementation of a 2D normalizing flow model. Implementation follows the one found here https://github.com/gathierry/FastFlow/"""
 
 import math
 from dataclasses import dataclass
