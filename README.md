@@ -2,30 +2,10 @@
 
 We publish the code relating to our experiments in this repository.
 
-**Abstract:** One of the most promising use-cases for machine learning
-in industrial manufacturing is the early detection of defective products
-using a quality control system. Such a system can save costs and re-
-duces human errors due to the monotonous nature of visual inspections.
-Today, a rich body of research exists which employs machine learning
-methods to identify rare defective products in unbalanced visual qual-
-ity control datasets. These methods typically rely on two components:
-A visual backbone to capture the features of the input image and an
-anomaly detection algorithm that decides if these features are within
-an expected distribution. With the rise of transformer architecture as
-visual backbones of choice, there exists now a great variety of different
-combinations of these two components, ranging all along the trade-off
-between detection quality and inference time. Facing this variety, prac-
-titioners in the field often have to spend a considerable amount of time
-on researching the right combination for their use-case at hand. Our
-contribution is to help practitioners with this choice by reviewing and
-evaluating current vision transformer models together with anomaly de-
-tection methods. For this, we chose SotA models of both disciplines,
-combined them and evaluated them towards the goal of having small,
-fast and efficient anomaly detection models suitable for industrial manu-
-facturing. We evaluated the results of our experiments on the well-known
-MVTecAD and BTAD datasets. Moreover, we give guidelines for choos-
-ing a suitable model architecture for a quality control system in practice,
-considering given use-case and hardware constraints.
+**Abstract:** One of the most promising use-cases for machine learning in industrial manufacturing is the early detection of defective products using a quality control system. Such a system can save costs and reduces human errors due to the monotonous nature of visual inspections.
+Today, a rich body of research exists which employs machine learning methods to identify rare defective products in unbalanced visual quality control datasets.
+These methods typically rely on two components: A visual backbone to capture the features of the input image and an anomaly detection algorithm that decides if these features are within an expected distribution. With the rise of transformer architecture as visual backbones of choice, there exists now a great variety of different combinations of these two components, ranging all along the trade-off between detection quality and inference time.
+Facing this variety, practitioners in the field often have to spend a considerable amount of time on researching the right combination for their use-case at hand. Our contribution is to help practitioners with this choice by reviewing and evaluating current vision transformer models together with anomaly detection methods. For this, we choose SotA models of both disciplines, combine and evaluate them towards the goal of having small, fast and efficient anomaly detection models suitable for industrial manufacturing. We evaluate the results on the well-known MVTecAD and BTAD datasets and propose considerations for using a quality control system in practice.
 
 ## Architecture and Training Procedure
 
